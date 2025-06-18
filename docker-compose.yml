@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  inventory-app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src/data:/app/src/data
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLE_CORS=false
