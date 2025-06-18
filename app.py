@@ -65,8 +65,8 @@ st.markdown("""
 # Header
 st.markdown("""
 <div style="text-align: center; padding: 2rem; background: linear-gradient(90deg, #1976d2, #42a5f5); color: white; border-radius: 8px; margin-bottom: 2rem; font-family: 'Arial', sans-serif;">
-    <h1>📊 Điều chuyển tồn kho</h1>
-    <p>Điều chuyển hàng hóa của kế toán</p>
+    <h1>📊 Phân bổ danh mục</h1>
+    <p>Phân bổ số lượng danh mục ra các mã sản phẩm</p>
 </div>
 """, unsafe_allow_html=True)
 
