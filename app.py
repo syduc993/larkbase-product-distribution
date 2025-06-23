@@ -207,7 +207,7 @@ if st.session_state.step >= 3:
             st.metric("📊 Min-Max", f"{min_qty}-{max_qty}")
 
         with st.expander("📋 Xem kết quả phân bổ chi tiết", expanded=True):
-            st.dataframe(st.session_state.df_allocated[['Tên sản phẩm','Màu','MOH','SL bán','Tổng lượng hàng','Tồn hiện tại','Tồn chuyển kho','SL sản xuất tái','SL sản xuất mới','SL phân bổ','SL phân bổ điều chỉnh']].head(), use_container_width=True)
+            st.dataframe(st.session_state.df_allocated.head(), use_container_width=True)
         
         #csv = st.session_state.df_allocated.to_csv(index=False, encoding='utf-8-sig')
         #st.download_button(label="💾 Tải xuống kết quả (CSV)", data=csv, file_name=f"phan_bo_san_pham_{st.session_state.selected_category}_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.csv", mime="text/csv")
